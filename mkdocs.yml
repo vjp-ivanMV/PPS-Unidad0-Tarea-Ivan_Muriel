@@ -3,7 +3,7 @@
 # -------------------------------------------------------------
 # CONFIGURACIÓN GENERAL DEL SITIO
 # -------------------------------------------------------------
-site_name: Tarea Unidad 0 - RA5 # Define el título que aparecerá en la barra de navegación y en la etiqueta <title> del navegador.
+site_name: PPS-Unidad0-Tarea-PPS # Define el título que aparecerá en la barra de navegación y en la etiqueta <title> del navegador.
 
 # -------------------------------------------------------------
 # ESTRUCTURA DE NAVEGACIÓN (MENÚ)
