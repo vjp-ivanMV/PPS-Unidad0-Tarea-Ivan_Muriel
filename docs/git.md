@@ -29,14 +29,16 @@
 
 1. La estructura del proyecto debe de ser la siguiente:
 
+    ```bash
     PPS-Unidad0ActividadGit-TuNombre/
     ├── calculator/
-    │   ├── `__init__.py`
+    │   ├── __init__.py
     │   └── gui.py
     ├── docs/
     │   └── index.md
     ├── mkdocs.yml
     ├── requirements.txt
+    ```
 
     Comenzamos:
 1. Creamos la estructura:
