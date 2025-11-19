@@ -185,23 +185,23 @@ Haz *commit* y *push* de los nuevos archivos .
 
 1. **Monitoreo en GitHub:**
     * Ve a la pestaña **Actions** de tu repositorio. Deberías ver el *workflow* "Documentación CI/CD" ejecutándose.
-    ![alt text](/docs/img/deploy.png)
+    ![alt text](img/deploy.png)
 
-1. **Activación de GitHub Pages:**
+2. **Activación de GitHub Pages:**
 
   Una vez que la *pipeline* se complete por primera vez, ve a **Settings** -> **Pages** en tu repositorio de GitHub y configura la fuente de despliegue a la rama **`gh-pages`** que la *pipeline* acaba de crear. Pulsamos el botón de `save` para que se guarden los cambios.
 
-  ![alt text](/docs/img/deploy3.png)
+  ![alt text](img/deploy3.png)
 
   Salimos para que se guarden los datos y tras unos minutos, en la sección de `Pages` tenemos:
 
-  ![alt text](/docs/img/deploy5.png)
+  ![alt text](img/deploy5.png)
 
 1. **Verificación Final:**
 
     La documentación debería estar accesible en la URL de GitHub Pages ( ej. `https://Tu_usuario_github.github.io/<repositorio>/`).
     Podemos encontrarlo en **Deployments /Github pages** hacemos clic sobre ella y se mostrará el enlace para acceder a nuestra página web estática.
 
-  ![alt text](/docs/img/deploy4.png)
+  ![alt text](img/deploy4.png)
 
-  ![alt text](/docs/img/deploy2.png)
+  ![alt text](img/deploy2.png)
