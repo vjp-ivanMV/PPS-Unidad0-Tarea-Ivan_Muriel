@@ -76,6 +76,7 @@ nav:
   - Home: index.md             # Primer elemento del menú, enlaza con el archivo 'index.md'.
   - Git: git.md
   - Git Actions: gitActions.md
+  - Git Pages: gitPages.md
   - Docker: docker.md
   - Conclusiones: conclusiones.md
 # -------------------------------------------------------------
