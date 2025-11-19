@@ -6,9 +6,9 @@
     
     **`PPS-Unidad0ActividadGit-TuNombre`**
     
-    -   Debe ser **público**
+    - Debe ser **público**
         
-    -   Debe contener un archivo **README**
+    -  Debe contener un archivo **README**
         
      ![alt](img/git.png)
 
@@ -42,7 +42,7 @@ PPS-Unidad0ActividadGit-TuNombre/
 ├── docs/
 │   └── index.md
 ├── mkdocs.yml
-├── requirements.txt` 
+├── requirements.txt
 
 ----------
 
@@ -54,7 +54,7 @@ PPS-Unidad0ActividadGit-TuNombre/
 
 ## 5. Comprobar el estado del proyecto
 
-`git status` 
+`git status`
 
 Verás archivos sin seguimiento.
 
@@ -62,17 +62,17 @@ Verás archivos sin seguimiento.
 
 ## 6. Añadir archivos al área _staged_
 
-`git add .` 
+`git add .`
 
 Comprueba nuevamente:
 
-`git status` 
+`git status`
 
 ----------
 
 ## 7. Ver estructura en árbol
 
-`tree -a` 
+`tree -a`
 
 Verás la carpeta oculta `.git` que contiene la estructura interna de Git.
 
@@ -105,13 +105,13 @@ Vuelve a añadirlos:
 
 ## 9. Confirmar los cambios (commit)
 
-`git commit -am "creando los archivos"` 
+`git commit -am "creando los archivos"`
 
 ----------
 
 ## 10. Subir los cambios
 
-`git push origin main` 
+`git push origin main`
 
 Verifica en GitHub que todo esté correcto.
 
@@ -122,7 +122,7 @@ Verifica en GitHub que todo esté correcto.
 Instalar Tkinter (si no lo tienes):
 
 `sudo apt install python3-tk
-python3 calculator/gui.py` 
+python3 calculator/gui.py`
 
 ----------
 
