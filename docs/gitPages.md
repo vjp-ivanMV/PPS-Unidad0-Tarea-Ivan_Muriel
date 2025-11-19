@@ -184,10 +184,10 @@ Haz *commit* y *push* de los nuevos archivos .
     ```
 
 1. **Monitoreo en GitHub:**
-    * Ve a la pestaña **Actions** de tu repositorio. Deberías ver el *workflow* "Documentación CI/CD" ejecutándose.
+    Ve a la pestaña **Actions** de tu repositorio. Deberías ver el *workflow* "Documentación CI/CD" ejecutándose.
     ![alt text](img/deploy.png)
 
-2. **Activación de GitHub Pages:**
+1. **Activación de GitHub Pages:**
 
   Una vez que la *pipeline* se complete por primera vez, ve a **Settings** -> **Pages** en tu repositorio de GitHub y configura la fuente de despliegue a la rama **`gh-pages`** que la *pipeline* acaba de crear. Pulsamos el botón de `save` para que se guarden los cambios.
 
