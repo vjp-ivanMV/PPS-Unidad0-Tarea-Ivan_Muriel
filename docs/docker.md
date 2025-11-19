@@ -28,7 +28,7 @@ A continuación, se adjuntan las capturas de pantalla solicitadas que demuestran
 
 En esta captura se muestra la ejecución del comando en la terminal y el ID del contenedor generado.
 
-![Captura de la creación de la máquina](/img/docker.png)
+![Captura de la creación de la máquina](img)
 
 ### B. Visualización de la página web
 
