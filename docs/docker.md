@@ -22,7 +22,7 @@ El comando final ejecutado fue:
 
 ## 2. Evidencias del despliegue
 
-A continuación, se adjuntan las capturas de pantalla solicitadas que demuestran el correcto funcionamiento del servicio.
+A continuación, se adjuntan las capturas de pantalla que demuestran el correcto funcionamiento del servicio.
 
 ### A. Creación de la máquina
 
