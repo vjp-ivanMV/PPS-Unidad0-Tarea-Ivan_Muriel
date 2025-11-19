@@ -5,7 +5,7 @@
     El repositorio debe de ser público.
     El repositorio debe te tener un archivo `README`.
 
-    ![alt]()
+    ![alt](img/git.png)
 
 1. Clona el repositorio que has creado en `github.com` a tu equipo:
 

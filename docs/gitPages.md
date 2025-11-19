@@ -184,8 +184,10 @@ Haz *commit* y *push* de los nuevos archivos .
     ```
 
 1. **Monitoreo en GitHub:**
-    Ve a la pestaña **Actions** de tu repositorio. Deberías ver el *workflow* "Documentación CI/CD" ejecutándose.
-    ![alt text](img/deploy.png)
+
+  Ve a la pestaña **Actions** de tu repositorio. Deberías ver el *workflow* "Documentación CI/CD" ejecutándose.
+
+  ![alt text](img/deploy.png)
 
 1. **Activación de GitHub Pages:**
 
