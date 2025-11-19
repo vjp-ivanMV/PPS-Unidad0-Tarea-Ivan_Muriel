@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Git - PPS-Unidad0-Tarea-PPS-IvanMuriel</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">PPS-Unidad0-Tarea-PPS-IvanMuriel</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Git</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../gitActions/" class="nav-link">Git Actions</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../gitPages/" class="nav-link">Git Pages</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../docker/" class="nav-link">Docker</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../conclusiones/" class="nav-link">Conclusiones</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../gitActions/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="1"><a href="#creacion-de-proyecto-y-repositorio" class="nav-link">Creación de Proyecto y Repositorio</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#1-crear-un-nuevo-repositorio-publico-en-github" class="nav-link">1. Crear un nuevo repositorio público en GitHub</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#2-clonar-el-repositorio-en-tu-equipo" class="nav-link">2. Clonar el repositorio en tu equipo</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#3-estructura-del-proyecto" class="nav-link">3. Estructura del proyecto</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#4-crear-la-estructura" class="nav-link">4. Crear la estructura</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#5-comprobar-el-estado-del-proyecto" class="nav-link">5. Comprobar el estado del proyecto</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#6-anadir-archivos-al-area-staged" class="nav-link">6. Añadir archivos al área staged</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#7-ver-estructura-en-arbol" class="nav-link">7. Ver estructura en árbol</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#8-anadir-contenido-a-los-archivos" class="nav-link">8. Añadir contenido a los archivos</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#9-confirmar-los-cambios-commit" class="nav-link">9. Confirmar los cambios (commit)</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#10-subir-los-cambios" class="nav-link">10. Subir los cambios</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#11-probar-la-calculadora" class="nav-link">11. Probar la calculadora</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#clonar-un-repositorio" class="nav-link">Clonar un repositorio</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#levantar-un-pequeno-servidor-web-con-php" class="nav-link">Levantar un pequeño Servidor Web con PHP</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#1-crear-archivo-html" class="nav-link">1. Crear archivo HTML</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#2-levantar-el-servidor" class="nav-link">2. Levantar el servidor</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#3-modificar-indexhtml" class="nav-link">3. Modificar index.html</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#4-ver-estado-y-diferencias" class="nav-link">4. Ver estado y diferencias</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#5-restaurar-archivo-a-version-previa" class="nav-link">5. Restaurar archivo a versión previa</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#6-confirmar-y-subir-cambios" class="nav-link">6. Confirmar y subir cambios</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#7-mover-archivo-con-git-mv" class="nav-link">7. Mover archivo con git mv</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#git-log" class="nav-link">Git Log</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#ramas" class="nav-link">Ramas</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#1-ver-ramas" class="nav-link">1. Ver ramas</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#2-eliminar-archivo-y-guardar-cambios" class="nav-link">2. Eliminar archivo y guardar cambios</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#3-crear-nueva-rama-dev" class="nav-link">3. Crear nueva rama dev</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="creacion-de-proyecto-y-repositorio"><strong>Creación de Proyecto y Repositorio</strong></h1>
+<h2 id="1-crear-un-nuevo-repositorio-publico-en-github">1. Crear un nuevo repositorio público en GitHub</h2>
+<ol>
+<li>
+<p>Crea un repositorio con el nombre:</p>
+<p><strong><code>PPS-Unidad0ActividadGit-TuNombre</code></strong></p>
+<ul>
+<li>
+<p>Debe ser <strong>público</strong></p>
+</li>
+<li>
+<p>Debe contener un archivo <strong>README</strong></p>
+</li>
+</ul>
+<p><img alt="alt" src="../img/git.png" /></p>
+</li>
+</ol>
+<hr />
+<h2 id="2-clonar-el-repositorio-en-tu-equipo">2. Clonar el repositorio en tu equipo</h2>
+<p><code>git clone git@github.com:$Tu_usuario_github/PPS-Unidad0ActividadGit-$TuNombre.git</code> </p>
+<p>Si aparece el mensaje:</p>
+<p><code>The authenticity of host 'github.com (140.82.121.4)' can't be established. ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+Are you sure you want to  continue connecting (yes/no/[fingerprint])?</code> </p>
+<p>Responde: <strong>yes</strong></p>
+<p>Luego entra en la carpeta:</p>
+<p><code>cd PPS-Unidad0ActividadGit-$TuNombre</code> </p>
+<hr />
+<h2 id="3-estructura-del-proyecto">3. Estructura del proyecto</h2>
+<p>Debe quedar así:</p>
+<p>PPS-Unidad0ActividadGit-TuNombre/
+├── calculator/
+│   ├── <strong>init</strong>.py
+│   └── gui.py
+├── docs/
+│   └── index.md
+├── mkdocs.yml
+├── requirements.txt</p>
+<hr />
+<h2 id="4-crear-la-estructura">4. Crear la estructura</h2>
+<p><code>mkdir calculator docs touch calculator/__init__.py calculator/gui.py docs/index.md mkdocs.yml requirements.txt ls -l *</code> </p>
+<hr />
+<h2 id="5-comprobar-el-estado-del-proyecto">5. Comprobar el estado del proyecto</h2>
+<p><code>git status</code></p>
+<p>Verás archivos sin seguimiento.</p>
+<hr />
+<h2 id="6-anadir-archivos-al-area-staged">6. Añadir archivos al área <em>staged</em></h2>
+<p><code>git add .</code></p>
+<p>Comprueba nuevamente:</p>
+<p><code>git status</code></p>
+<hr />
+<h2 id="7-ver-estructura-en-arbol">7. Ver estructura en árbol</h2>
+<p><code>tree -a</code></p>
+<p>Verás la carpeta oculta <code>.git</code> que contiene la estructura interna de Git.</p>
+<hr />
+<h2 id="8-anadir-contenido-a-los-archivos">8. Añadir contenido a los archivos</h2>
+<p>Edita los archivos:</p>
+<ul>
+<li>
+<p><code>__init__.py</code></p>
+</li>
+<li>
+<p><code>gui.py</code></p>
+</li>
+<li>
+<p><code>index.md</code></p>
+</li>
+<li>
+<p><code>mkdocs.yml</code></p>
+</li>
+<li>
+<p><code>requirements.txt</code></p>
+</li>
+</ul>
+<p>Y revisa el estado:</p>
+<p><code>git status</code> </p>
+<p>Vuelve a añadirlos:</p>
+<p><code>git add .</code> </p>
+<hr />
+<h2 id="9-confirmar-los-cambios-commit">9. Confirmar los cambios (commit)</h2>
+<p><code>git commit -am "creando los archivos"</code></p>
+<hr />
+<h2 id="10-subir-los-cambios">10. Subir los cambios</h2>
+<p><code>git push origin main</code></p>
+<p>Verifica en GitHub que todo esté correcto.</p>
+<hr />
+<h2 id="11-probar-la-calculadora">11. Probar la calculadora</h2>
+<p>Instalar Tkinter (si no lo tienes):</p>
+<p><code>sudo apt install python3-tk
+python3 calculator/gui.py</code></p>
+<hr />
+<h1 id="clonar-un-repositorio"><strong>Clonar un repositorio</strong></h1>
+<ol>
+<li>
+<p>Crea una carpeta llamada:</p>
+<p><strong><code>PPS-Unidad0ActividadGit-TuNombreCopia</code></strong></p>
+</li>
+<li>
+<p>Entra en ella y clona:</p>
+</li>
+</ol>
+<p><code>git clone git@github.com:$Tu_usuario_github/PPS-Unidad0ActividadGit-$TuNombre.git</code> </p>
+<ol>
+<li>Borra esa carpeta y vuelve al proyecto original.</li>
+</ol>
+<hr />
+<h1 id="levantar-un-pequeno-servidor-web-con-php"><strong>Levantar un pequeño Servidor Web con PHP</strong></h1>
+<h2 id="1-crear-archivo-html">1. Crear archivo HTML</h2>
+<p><code>echo  "&lt;h1&gt; hola¡¡¡ Bienvenidos a la clase de PPS&lt;/h1&gt;" &gt;&gt; index.html
+git add .
+git commit -am "añadido index.html"</code> </p>
+<h2 id="2-levantar-el-servidor">2. Levantar el servidor</h2>
+<p><code>php -S 0:8080</code> </p>
+<p>Abre otra pestaña del terminal.</p>
+<p>Visita:</p>
+<p>👉 <strong><a href="http://localhost:8080">http://localhost:8080</a></strong></p>
+<hr />
+<h2 id="3-modificar-indexhtml">3. Modificar <code>index.html</code></h2>
+<p>Edita el archivo y refresca el navegador para ver los cambios.</p>
+<hr />
+<h2 id="4-ver-estado-y-diferencias">4. Ver estado y diferencias</h2>
+<p><code>git status
+git diff index.html</code> </p>
+<hr />
+<h2 id="5-restaurar-archivo-a-version-previa">5. Restaurar archivo a versión previa</h2>
+<p><code>git restore index.html</code> </p>
+<p>Refresca el navegador.</p>
+<hr />
+<h2 id="6-confirmar-y-subir-cambios">6. Confirmar y subir cambios</h2>
+<p><code>git add .
+git commit -am "actualizando proyecto" git push</code> </p>
+<hr />
+<h2 id="7-mover-archivo-con-git-mv">7. Mover archivo con <code>git mv</code></h2>
+<p><code>git mv index.html index.html.save</code> </p>
+<p>Detén el servidor PHP si sigue activo:</p>
+<p>Ctrl + C</p>
+<hr />
+<h1 id="git-log"><strong>Git Log</strong></h1>
+<p>Consulta la documentación:<br />
+<a href="https://git-scm.com/book/es/v2/Fundamentos-de-Git-Ver-el-Historial-de-Confirmaciones">https://git-scm.com/book/es/v2/Fundamentos-de-Git-Ver-el-Historial-de-Confirmaciones</a></p>
+<hr />
+<h3 id="ver-historial">Ver historial</h3>
+<p><code>git log</code> </p>
+<h3 id="ultimos-3-commits">Últimos 3 commits</h3>
+<p><code>git log -3</code> </p>
+<h3 id="mostrar-logs-en-una-linea">Mostrar logs en una línea</h3>
+<p><code>git log --pretty=oneline</code> </p>
+<h3 id="ultimos-2-commits-con-diferencias">Últimos 2 commits con diferencias</h3>
+<p><code>git log -p -2</code> </p>
+<h3 id="cambios-del-ultimo-dia">Cambios del último día</h3>
+<p><code>git log --since=1.day</code> </p>
+<hr />
+<h1 id="ramas"><strong>Ramas</strong></h1>
+<h2 id="1-ver-ramas">1. Ver ramas</h2>
+<p><code>git branch --list</code> </p>
+<hr />
+<h2 id="2-eliminar-archivo-y-guardar-cambios">2. Eliminar archivo y guardar cambios</h2>
+<p><code>git rm index.html.save
+git commit -am "eliminando index.html.save" git push origin main</code> </p>
+<hr />
+<h2 id="3-crear-nueva-rama-dev">3. Crear nueva rama <code>dev</code></h2>
+<p><code>git checkout -b dev</code> </p>
+<p>Subirla al remoto:</p>
+<p><code>git push origin dev</code> </p>
+<p>En GitHub puedes comparar las ramas y ver que tienen contenido diferente.</p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
