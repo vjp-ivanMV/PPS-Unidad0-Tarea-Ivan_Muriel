@@ -1,238 +1,255 @@
-# Creación de Proyecto y repositorio
+# **Creación de Proyecto y Repositorio**
 
-1. Crea un nuevo repositorio público en gitHub.
-    El repositorio debe de llevar por nombre PPS-Unidad0ActividadGit-TuNombre.
-    El repositorio debe de ser público.
-    El repositorio debe te tener un archivo `README`.
+## 1. Crear un nuevo repositorio público en GitHub
 
-    ![alt](img/git.png)
+1.  Crea un repositorio con el nombre:
+    
+    **`PPS-Unidad0ActividadGit-TuNombre`**
+    
+    -   Debe ser **público**
+        
+    -   Debe contener un archivo **README**
+        
+     ![alt](img/git.png)
 
-1. Clona el repositorio que has creado en `github.com` a tu equipo:
+----------
 
-    ```bash
-    git clone git@github.com:$Tu_usuario_github/PPS-Unidad0ActividadGit-$TuNombre.git
-    ```
+## 2. Clonar el repositorio en tu equipo
 
-    Si nos sale el mensaje:
-    `The authenticity of host 'github.com (140.82.121.4)' can't be established.`
-    `ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.`
-    `This key is not known by any other names.`
-    `Are you sure you want to continue connecting (yes/no/[fingerprint])?`
+`git clone git@github.com:$Tu_usuario_github/PPS-Unidad0ActividadGit-$TuNombre.git` 
 
-    Contestamos `yes`
+Si aparece el mensaje:
 
-    Se nos habrá creado una carpeta con el nombre del proyecto, entra en ella.
+`The authenticity of host 'github.com (140.82.121.4)' can't be established. ED25519 key fingerprint is SHA256:+DiY3wvvV6TuJJhbpZisF/zLDA0zPMSvHdkr4UvCOqU.
+Are you sure you want to  continue connecting (yes/no/[fingerprint])?` 
 
-    ```bash
-        cd PPS-Unidad0ActividadGit-$Tu_nombre
-    ```
+Responde: **yes**
 
-1. La estructura del proyecto debe de ser la siguiente:
+Luego entra en la carpeta:
 
-    ```bash
-        PPS-Unidad0ActividadGit-TuNombre/
-        ├── calculator/
-        │   ├── __init__.py
-        │   └── gui.py
-        ├── docs/
-        │   └── index.md
-        ├── mkdocs.yml
-        ├── requirements.txt
-    ```
+`cd PPS-Unidad0ActividadGit-$TuNombre` 
 
-    Comenzamos:
-1. Creamos la estructura:
+----------
 
-    ```bash
-        mkdir calculator docs
-        touch calculator/__init__.py calculator/gui.py  docs/index.md mkdocs.yml requiriments.txt
-        ls -l *
-    ```
+## 3. Estructura del proyecto
 
-1. Comprueba el estado del proyecto:
+Debe quedar así:
 
-    ```bash
-        git status
-    ```
+PPS-Unidad0ActividadGit-TuNombre/
+├── calculator/
+│   ├── __init__.py
+│   └── gui.py
+├── docs/
+│   └── index.md
+├── mkdocs.yml
+├── requirements.txt` 
 
-    Vemos como nos indica que tenemos archivos sin seguimiento.
+----------
 
-1. Añade los diferentes archivos y carpetas `git add` o `git add -A`
+## 4. Crear la estructura
 
-    ```bash
-        git add .
-    ```
+`mkdir calculator docs touch calculator/__init__.py calculator/gui.py docs/index.md mkdocs.yml requirements.txt ls -l *` 
 
-1. Comprueba el estado `git status` y veras que ya aparecen en el area de `staged` pero están pendientes de ser confirmados.
+----------
 
-1. Haz un listado en forma de arbol (tree -a) de todos los archivos del directorio.
+## 5. Comprobar el estado del proyecto
 
-    ```bash
-        tree -a
-    ```
+`git status` 
 
-    Observa cómo además de los archivos que hemos creado, aparecen también una carpeta oculta `.git` con otras carpetas y archivos. Es toda la estructura de git para guardar el proyecto.
+Verás archivos sin seguimiento.
 
-1. Copia el contenido de los archivos del proyecto: `__init__.py`, `gui.py`, `index.md`, `mkdocs.yml` y `requirements.txt`, dentro de los archivos que hemos creado y vuelve a comprobar su estado.
+----------
 
-    ```bash
-        git status
-    ```
+## 6. Añadir archivos al área _staged_
 
-1. Ya sabes lo que tienes que hacer para añadirlos al area de `staged`:
+`git add .` 
 
-    ```bash
-        git add .
-    ```
+Comprueba nuevamente:
 
-1. Para confirmar los cambios, haz un `commit` como comentario indica que es la creación de archivos y vuelves a comprobar su estado.
+`git status` 
 
-    ```bash
-        git commit -am "creando los archivos"
-    ```
+----------
 
-1. Sube los cambios al repositorio remoto:
+## 7. Ver estructura en árbol
 
-    ```bash
-        git push origin main
-    ```
+`tree -a` 
 
-1. Comprueba en la web si todo se visualiza correctamente.
+Verás la carpeta oculta `.git` que contiene la estructura interna de Git.
 
-1. Si quisieras ver cómo funciona la calculadora, la ejecución la hacemos con `Python` y es posible que tengas que instalar el paquete de Tkinter.
+----------
 
-    ```bash
-        sudo apt install python3-tk
-        python3 calculator/gui.py
-    ```
+## 8. Añadir contenido a los archivos
 
----
+Edita los archivos:
 
-## Clonar un repositorio
+-   `__init__.py`
+    
+-   `gui.py`
+    
+-   `index.md`
+    
+-   `mkdocs.yml`
+    
+-   `requirements.txt`
+    
 
-Para ver cómo podemos clonar un repositorio:
+Y revisa el estado:
 
-1. Crea una nueva carpeta en tu directorio de git de PPS, con el nombre de esta actividad `PPS-Unidad0ActividadGit-TuNombreCopia`.
-1. Sitúate dentro de dicha carpeta y clonas el repositorio:
+`git status` 
 
-    ```bash
-        git clone git@github.com:$Tu_usuario_github/PPS-Unidad0ActividadGit-$Tu_nombre.git
-    ```
+Vuelve a añadirlos:
 
-1. Borra esta carpeta creada y vuelve de nuevo ala carpeta del proyecto original
+`git add .` 
 
----
+----------
 
-## Levantar un pequeño Servidor Web con PHP
+## 9. Confirmar los cambios (commit)
 
-1. Crea un archivo con nombre `index.html` con código HTML.
-1. Levanta un servidor web que nos mostrará el contenido del `index.html`.
+`git commit -am "creando los archivos"` 
 
-    ```bash
-        echo "<h1> hola¡¡¡ Bienvenidos a la clase de PPS</h1>" >> index.html
-        git add .
-        git commit -am "añadido index.html"
-        php -S 0:8080
-    ```
+----------
 
-1. Abre otra pestaña en el terminal, ya que se queda ocupada con el servidor php. Cuando quieras interrumpir la ejecución pulsa Ctrl+C.
+## 10. Subir los cambios
 
-1. Visualiza la página web: <http://localhost:8080>
+`git push origin main` 
 
-1. Modifica el fichero index.html para que cambie el texto mostrado en la página web y refresca el navegador para ver cómo ha cambiado el mensaje.
+Verifica en GitHub que todo esté correcto.
 
-1. Verifica estado del proyecto y veamos las diferencias del archivo actual con la guardada en el área de `stage`
+----------
 
-    ```bash
-        git status
-        git diff index.html
-    ```
+## 11. Probar la calculadora
 
-1. Hacemos un `git restore` y volvemos a refrescar el navegador y vemos como vuelve al mensaje que teníamos antes. Han desaparecido esos combios de nuestra zona local.
+Instalar Tkinter (si no lo tienes):
 
-    ```bash
-        git restore index.html
-    ```
+`sudo apt install python3-tk
+python3 calculator/gui.py` 
 
-1. Vuelve a refrescar navegador para ver como vuelve a versión inicial.
+----------
 
-1. Mira el estado del proyecto y confirma todos los cambios.
+# **Clonar un repositorio**
 
-1. Haz un push y comprueba cómo han subido los archivos a github.com.
+1.  Crea una carpeta llamada:
+    
+    **`PPS-Unidad0ActividadGit-TuNombreCopia`**
+    
+2.  Entra en ella y clona:
+    
 
-    ```bash
-        git push
-    ```
+`git clone git@github.com:$Tu_usuario_github/PPS-Unidad0ActividadGit-$TuNombre.git` 
 
-1. Utiliza el comando `git mv` para mover el archivo `index.html` a `index.html.save`.
+3.  Borra esa carpeta y vuelve al proyecto original.
+    
 
-    ```bash
-        git mv index.html index.html.save
-    ```
+----------
 
-1. Comprueba como git ha movido el index y no tenemos acceso a él.
-1. Para ya el servidor PHP.
+# **Levantar un pequeño Servidor Web con PHP**
 
-## Git loG
+## 1. Crear archivo HTML
 
-1. Mira la página de [Git Book sobre los comandos git log](https://git-scm.com/book/es/v2/Fundamentos-de-Git-Ver-el-Historial-de-Confirmaciones)
+`echo  "<h1> hola¡¡¡ Bienvenidos a la clase de PPS</h1>" >> index.html
+git add .
+git commit -am "añadido index.html"` 
 
-1. Muestra los logs
+## 2. Levantar el servidor
 
-    ```bash
-        git log
-    ```
+`php -S 0:8080` 
 
-1. Muestra los logs de los últimos 3 commits
+Abre otra pestaña del terminal.
 
-    ```bash
-        git log -3
-    ```
+Visita:
 
-1. Muestra los logs utilizando el modificador ``--pretty`
+👉 **[http://localhost:8080](http://localhost:8080)**
 
-    ```bash
-        git log --pretty=oneline
-    ```
+----------
 
-1. Muestra los logs de los últimos 2 commits donde se vean las diferencias de cada una de las entradas.
+## 3. Modificar `index.html`
 
-    ```bash
-        git log -p -2
-    ```
+Edita el archivo y refresca el navegador para ver los cambios.
 
-1. Muestra los logs de las modificaciones realizadas en el último día.
+----------
 
-    ```bash
-        git log --since=1.day
-    ```
+## 4. Ver estado y diferencias
 
-## Ramas
+`git status
+git diff index.html` 
 
-1. Lista las ramas existentes.
+----------
 
-    ```bash
-        git branch --list
-    ```
+## 5. Restaurar archivo a versión previa
 
-1. Elimina el archivo index.html.save y guardas modificaciones.
+`git restore index.html` 
 
-    ```bash
-        git rm index.html.save
-        git commit -am "eliminando index.html.save"
-        git push origin main
-    ```
+Refresca el navegador.
 
-1. Crea una nueva rama con nombre `dev` a partir de la rama actual.
+----------
 
-    ```bash
-        git checkout -b dev
-    ```
+## 6. Confirmar y subir cambios
 
-1. Sube los cambios al respositorio remoto a la rama `dev`  
+`git add .
+git commit -am "actualizando proyecto" git push` 
 
-    ```bash
-        git push origin dev
-    ```
+----------
 
-En este caso, desde la web, cambiando las ramas, podemos ver cómo el index.html de la rama `main` y `dev` son diferentes.
+## 7. Mover archivo con `git mv`
+
+`git mv index.html index.html.save` 
+
+Detén el servidor PHP si sigue activo:
+
+Ctrl + C
+
+----------
+
+# **Git Log**
+
+Consulta la documentación:  
+[https://git-scm.com/book/es/v2/Fundamentos-de-Git-Ver-el-Historial-de-Confirmaciones](https://git-scm.com/book/es/v2/Fundamentos-de-Git-Ver-el-Historial-de-Confirmaciones)
+
+----------
+
+### Ver historial
+
+`git log` 
+
+### Últimos 3 commits
+
+`git log -3` 
+
+### Mostrar logs en una línea
+
+`git log --pretty=oneline` 
+
+### Últimos 2 commits con diferencias
+
+`git log -p -2` 
+
+### Cambios del último día
+
+`git log --since=1.day` 
+
+----------
+
+# **Ramas**
+
+## 1. Ver ramas
+
+`git branch --list` 
+
+----------
+
+## 2. Eliminar archivo y guardar cambios
+
+`git rm index.html.save
+git commit -am "eliminando index.html.save" git push origin main` 
+
+----------
+
+## 3. Crear nueva rama `dev`
+
+`git checkout -b dev` 
+
+Subirla al remoto:
+
+`git push origin dev` 
+
+En GitHub puedes comparar las ramas y ver que tienen contenido diferente.
