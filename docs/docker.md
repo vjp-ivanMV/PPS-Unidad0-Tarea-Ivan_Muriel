@@ -28,16 +28,16 @@ A continuación, se adjuntan las capturas de pantalla solicitadas que demuestran
 
 En esta captura se muestra la ejecución del comando en la terminal y el ID del contenedor generado.
 
-![Captura de la creación de la máquina](/docs/img/docker.png)
+![Captura de la creación de la máquina](docs/img/docker.png)
 
 ### B. Visualización de la página web
 
 Accediendo a través del navegador a `http://localhost:8085`, se observa la documentación cargada correctamente.
 
-![Captura del navegador web](/docs/img/nginx.png)
+![Captura del navegador web](docs/img/nginx.png)
 
 ### C. Información del Contenedor (Docker Inspect)
 
 Detalle de la configuración interna del contenedor, donde se puede verificar el montaje del volumen (*Mounts*) y la configuración de red.
 
-![Captura del docker inspect](/docs/img/docker_inspect.png)
+![Captura del docker inspect](docs/img/docker_inspect.png)

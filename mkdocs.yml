@@ -3,7 +3,7 @@
 # -------------------------------------------------------------
 # CONFIGURACIÓN GENERAL DEL SITIO
 # -------------------------------------------------------------
-site_name: PPS-Unidad0-Tarea-PPS # Define el título que aparecerá en la barra de navegación y en la etiqueta <title> del navegador.
+site_name: PPS-Unidad0-Tarea-PPS-IvanMuriel # Define el título que aparecerá en la barra de navegación y en la etiqueta <title> del navegador.
 
 # -------------------------------------------------------------
 # ESTRUCTURA DE NAVEGACIÓN (MENÚ)
@@ -23,7 +23,7 @@ nav:
 # MkDocs buscará aquí los archivos listados en 'nav'.
 doc_dir: docs 
 # -------------------------------------------------------------
-# TEMA (Opcional, pero común)
+# TEMA (Opcional)
 # -------------------------------------------------------------
 # theme: 
 #   name: 'material' # Si usas el popular tema Material for MkDocs.
