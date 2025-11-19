@@ -16,9 +16,9 @@ El proceso realizado fue el siguiente:
 
 El comando final ejecutado fue:
 
-    ```bash
-        docker run -d --name PPSUnidad0-Tarea_Ivan_Muriel -p 8085:80 -v "$(pwd)":/usr/share/nginx/html nginx:latest
-    ```
+```bash
+    docker run -d --name PPSUnidad0-Tarea_Ivan_Muriel -p 8085:80 -v "/$(pwd):/usr/share/nginx/html" nginx:latest
+```
 
 ## 2. Evidencias del despliegue
 
